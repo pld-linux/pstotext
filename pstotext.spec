@@ -2,7 +2,7 @@ Summary:	PostScript to text converter
 Summary(pl):	Konwerter PostScriptu do czystego tekstu
 Name:		pstotext
 Version:	1.8g
-Release:	1
+Release:	2
 License:	Digital's paranoid but open-source license
 Group:		Applications/Text
 Source0:	http://www.research.digital.com/SRC/virtualpaper/binaries/%{name}.tar.Z
@@ -23,7 +23,8 @@ Efekt nie zawsze jest idealny, ale zazwyczaj wystarczaj±cy.
 %setup -q -n %{name}
 
 %build
-%{__make} CC="%{__cc} %{rpmcflags}"
+%{__make} \
+	CC="%{__cc} %{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -32,12 +33,11 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 install pstotext $RPM_BUILD_ROOT%{_bindir}/pstotext
 install pstotext.1 $RPM_BUILD_ROOT%{_mandir}/man1/pstotext.1
 
+%clean
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %doc pstotext.txt
 %attr(755,root,root) %{_bindir}/pstotext
 %{_mandir}/man1/pstotext.1*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
