@@ -31,11 +31,10 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 install pstotext $RPM_BUILD_ROOT%{_bindir}/pstotext
 install pstotext.1 $RPM_BUILD_ROOT%{_mandir}/man1/pstotext.1
 
-gzip -9nf pstotext.txt
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc pstotext.txt
 %attr(755,root,root) %{_bindir}/pstotext
 %{_mandir}/man1/pstotext.1*
 
