@@ -6,6 +6,7 @@ Release:	1
 License:	Digital's paranoid but open-source license
 Group:		Applications/Text
 Source0:	http://www.research.digital.com/SRC/virtualpaper/binaries/%{name}.tar.Z
+# Source0-md5:	7ab3b9e859d7feae01ac21531070cdab
 URL:		http://www.research.digital.com/SRC/virtualpaper/pstotext.html
 Requires:	ghostscript
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
