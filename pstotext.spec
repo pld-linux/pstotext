@@ -5,9 +5,9 @@ Version:	1.8g
 Release:	2
 License:	Digital's paranoid but open-source license
 Group:		Applications/Text
-Source0:	http://www.research.digital.com/SRC/virtualpaper/binaries/%{name}.tar.Z
-# Source0-md5:	7ab3b9e859d7feae01ac21531070cdab
-URL:		http://www.research.digital.com/SRC/virtualpaper/pstotext.html
+Source0:	http://www.research.compaq.com/SRC/virtualpaper/binaries/%{name}.tar.Z
+# Source0-md5:	1be0be028ccc85be1bf55d7e90976b18
+URL:		http://www.research.compaq.com/SRC/virtualpaper/pstotext.html
 Requires:	ghostscript
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
