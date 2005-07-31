@@ -1,3 +1,5 @@
+# TODO
+# - security http://security.gentoo.org/glsa/glsa-200507-29.xml
 Summary:	PostScript to text converter
 Summary(pl):	Konwerter PostScriptu do czystego tekstu
 Name:		pstotext
