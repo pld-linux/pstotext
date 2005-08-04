@@ -1,0 +1,19 @@
+- update pstotext to ghostgum's (libgs API author) version:
+
+ * Changelog since 1.8g
+ Version 1.9 is a modification of 1.8h to recognise excessive space in
+  "ashow" as being a word separator, as found output from groff 1.08.
+  Also fixed widthshow, awidthshow and added xshow, yshow and xyshow.
+  Uses ANSI prototypes.  These are now required, not optional.
+  Fixes a number of compiler warnings.
+  Note that neither of the original authors still work at DEC/Compaq/HP.
+ 2004-01-09 by Russell Lang at Ghostgum Software Pty Ltd.
+
+ Version 1.8h is a modification of the original 1.8 to allow
+  operation with Aladdin Ghostscript 6.0, to add -output to
+  Windows and OS/2 executables, and to insert line breaks
+  and form feeds is pstotext output.  Modifications made
+ 2000-07-15 by Russell Lang at Ghostgum Software Pty Ltd.
+
+  main.c changed to use mkstemp not tempnam for Unix,
+ 2000-06-02 by Russell Lang at Ghostgum Software Pty Ltd.
