@@ -4,12 +4,13 @@ Summary:	PostScript to text converter
 Summary(pl):	Konwerter PostScriptu do czystego tekstu
 Name:		pstotext
 Version:	1.9
-Release:	1
+Release:	2
 License:	Digital's paranoid but open-source license
 Group:		Applications/Text
 Source0:	ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/contrib/%{name}-%{version}.tar.gz
 # Source0-md5:	64576e8a10ff5514e285d98b3898ae78
 #Source0:	http://www.research.compaq.com/SRC/virtualpaper/binaries/%{name}.tar.Z
+Patch0:		pstotext-dsafer.patch
 URL:		http://www.research.compaq.com/SRC/virtualpaper/pstotext.html
 Requires:	ghostscript
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -23,7 +24,8 @@ To narzêdzie czyta pliki PostScript i produkuje odpowiednik ASCII.
 Efekt nie zawsze jest idealny, ale zazwyczaj wystarczaj±cy.
 
 %prep
-%setup -q 
+%setup -q
+%patch0 -p1
 
 %build
 %{__make} \
