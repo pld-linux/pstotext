@@ -1,5 +1,5 @@
 Summary:	PostScript to text converter
-Summary(pl):	Konwerter PostScriptu do czystego tekstu
+Summary(pl.UTF-8):   Konwerter PostScriptu do czystego tekstu
 Name:		pstotext
 Version:	1.9
 Release:	2
@@ -17,9 +17,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This utility reads in postscript files and outputs an ASCII rendering.
 While the rendering is not always accurate, it is often sufficient.
 
-%description -l pl
-To narzêdzie czyta pliki PostScript i produkuje odpowiednik ASCII.
-Efekt nie zawsze jest idealny, ale zazwyczaj wystarczaj±cy.
+%description -l pl.UTF-8
+To narzÄ™dzie czyta pliki PostScript i produkuje odpowiednik ASCII.
+Efekt nie zawsze jest idealny, ale zazwyczaj wystarczajÄ…cy.
 
 %prep
 %setup -q
