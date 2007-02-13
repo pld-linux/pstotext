@@ -1,5 +1,5 @@
 Summary:	PostScript to text converter
-Summary(pl.UTF-8):   Konwerter PostScriptu do czystego tekstu
+Summary(pl.UTF-8):	Konwerter PostScriptu do czystego tekstu
 Name:		pstotext
 Version:	1.9
 Release:	2
